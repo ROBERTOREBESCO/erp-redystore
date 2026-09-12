@@ -1,41 +1,53 @@
-import os
 import datetime
-from sqlalchemy import create_engine, Column, Integer, String, DateTime
-from sqlalchemy.ext.declarative import declarative_base
+import os
+from pathlib import Path
+
+from sqlalchemy import DateTime, String, create_engine
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 # Caminho do banco de dados
-db_path = r"D:\REDYSTORE\APP REDYSTORE\erp.db"
+db_path = str(Path(__file__).with_name("erp.db"))
 
-# Cria a pasta se não existir
+# Cria a pasta se nao existir
 os.makedirs(os.path.dirname(db_path), exist_ok=True)
 
-# Configuração do banco SQLite
+# Configuracao do banco SQLite
 engine = create_engine(f"sqlite:///{db_path}")
-Base = declarative_base()
+
+
+class Base(DeclarativeBase):
+    pass
+
 
 # Modelo da tabela Clientes
 class Cliente(Base):
     __tablename__ = "clientes"
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    tipo_pessoa = Column(String)  # Fisica ou Juridica
-    nome_completo = Column(String)
-    cpf = Column(String, unique=True)
-    rg = Column(String)
-    sexo = Column(String)
-    cep = Column(String)
-    rua = Column(String)
-    bairro = Column(String)
-    cidade = Column(String)
-    estado = Column(String)
-    cnpj = Column(String, unique=True)
-    nome_fantasia = Column(String)
-    razao_social = Column(String)
-    ramo_atividade = Column(String)
-    telefone = Column(String)
-    email = Column(String)
-    data_cadastro = Column(DateTime, default=datetime.datetime.utcnow)
 
-# Criação do banco e da tabela
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    tipo_pessoa: Mapped[str | None] = mapped_column(String)  # Fisica ou Juridica
+    nome_completo: Mapped[str | None] = mapped_column(String)
+    cpf: Mapped[str | None] = mapped_column(String, unique=True)
+    rg: Mapped[str | None] = mapped_column(String)
+    sexo: Mapped[str | None] = mapped_column(String)
+    cep: Mapped[str | None] = mapped_column(String)
+    rua: Mapped[str | None] = mapped_column(String)
+    bairro: Mapped[str | None] = mapped_column(String)
+    cidade: Mapped[str | None] = mapped_column(String)
+    estado: Mapped[str | None] = mapped_column(String)
+    cnpj: Mapped[str | None] = mapped_column(String, unique=True)
+    nome_fantasia: Mapped[str | None] = mapped_column(String)
+    razao_social: Mapped[str | None] = mapped_column(String)
+    ramo_atividade: Mapped[str | None] = mapped_column(String)
+    telefone: Mapped[str | None] = mapped_column(String)
+    email: Mapped[str | None] = mapped_column(String)
+    data_cadastro: Mapped[datetime.datetime | None] = mapped_column(
+        DateTime,
+        default=lambda: datetime.datetime.now(datetime.UTC),
+    )
+
+
+# Criacao do banco e da tabela
 Base.metadata.create_all(engine)
 
-print(f"Banco de dados criado em: {db_path}")
+if __name__ == "__main__":
+    print(f"Banco de dados criado em: {db_path}")
