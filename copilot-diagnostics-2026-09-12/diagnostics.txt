@@ -1,0 +1,115 @@
+=== HEALTHCHECK ===
+{
+  "app": {
+    "arch": "x86_64",
+    "build_debug": false,
+    "commit": "ae7ad64",
+    "exe_path": "C:\\Users\\rober\\AppData\\Local\\Programs\\GitHub Copilot\\github.exe",
+    "name": "GitHub Copilot",
+    "platform": "windows",
+    "version": "1.1.19"
+  },
+  "auth": {
+    "host": null,
+    "login": null,
+    "message": "No saved GitHub authentication found.",
+    "status": "missing"
+  },
+  "copilot": {
+    "bundled_version": "1.0.84-4",
+    "found": true,
+    "path": "C:\\Users\\rober\\AppData\\Local\\github-copilot-sdk\\cli\\1.0.84-4\\copilot.exe",
+    "source": "bundled",
+    "version": "Copilot binary version: 1.0.84-4",
+    "version_error": null,
+    "version_timed_out": false
+  },
+  "database": {
+    "available": true,
+    "latest_supported_schema_version": 123,
+    "path": "C:\\Users\\rober\\.copilot\\data.db",
+    "recovered_backup_version": null,
+    "recovered_from_backup": false,
+    "schema_version": 123,
+    "schema_version_error": null,
+    "unexpected_fresh_install": false
+  },
+  "env": {
+    "copilot_cli_path": null,
+    "copilot_home": "C:\\Users\\rober\\.copilot",
+    "copilot_home_exists": true,
+    "effective_path": "C:\\Users\\rober\\AppData\\Local\\github-copilot-git-2.53.0-4\\cmd;C:\\Users\\rober\\AppData\\Local\\github-copilot-git-2.53.0-4\\mingw64\\bin;C:\\Users\\rober\\AppData\\Local\\github-copilot-git-2.53.0-4\\mingw64\\usr\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;c:\\Users\\rober\\appData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Launcher\\;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\rober\\.local\\bin;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\rober\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\rober\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\rober\\AppData\\Local\\JetBrains\\PyCharm Community Edition 2022.2.3\\bin;C:\\Users\\rober\\AppData\\Local\\JetBrains\\IntelliJ IDEA Educational Edition 2022.2.2\\bin;C:\\Users\\rober\\AppData\\Roaming\\Programs\\Zero Install;C:\\Users\\rober\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\rober\\AppData\\Roaming\\npm;C:\\Arquivos de Programas\\java\\jdk-17\\bin;C:\\Users\\rober\\AppData\\Local\\Python\\bin;",
+    "effective_path_entries": 37,
+    "path": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;c:\\Users\\rober\\appData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft SQL Server\\170\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Launcher\\;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\rober\\.local\\bin;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\rober\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\rober\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\rober\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\rober\\AppData\\Local\\JetBrains\\PyCharm Community Edition 2022.2.3\\bin;C:\\Users\\rober\\AppData\\Local\\JetBrains\\IntelliJ IDEA Educational Edition 2022.2.2\\bin;C:\\Users\\rober\\AppData\\Roaming\\Programs\\Zero Install;C:\\Users\\rober\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\rober\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\rober\\AppData\\Roaming\\npm;C:\\Arquivos de Programas\\java\\jdk-17\\bin;C:\\Users\\rober\\AppData\\Local\\Python\\bin;",
+    "path_entries": 33
+  },
+  "gh_cli": {
+    "bundled_version": "2.98.0",
+    "found": true,
+    "meets_minimum_version": true,
+    "minimum_version": "2.20.0",
+    "path": "C:\\Users\\rober\\AppData\\Local\\copilot-desktop-gh-2.98.0\\gh.exe",
+    "source": "bundled",
+    "version": "2.98.0",
+    "version_error": null
+  },
+  "git": {
+    "bundled_version": "2.53.0-4",
+    "candidates": [
+      {
+        "exists": true,
+        "path": "C:\\Program Files\\Git\\cmd"
+      },
+      {
+        "exists": true,
+        "path": "C:\\Program Files\\Git\\bin"
+      },
+      {
+        "exists": false,
+        "path": "C:\\Program Files (x86)\\Git\\cmd"
+      },
+      {
+        "exists": false,
+        "path": "C:\\Program Files (x86)\\Git\\bin"
+      },
+      {
+        "exists": false,
+        "path": "C:\\Users\\rober\\AppData\\Local\\Programs\\Git\\cmd"
+      },
+      {
+        "exists": false,
+        "path": "C:\\Users\\rober\\AppData\\Local\\Programs\\Git\\bin"
+      }
+    ],
+    "found": true,
+    "lfs_available": true,
+    "on_extended_path": true,
+    "on_live_registry_path": true,
+    "on_process_path": true,
+    "path": "C:\\Users\\rober\\AppData\\Local\\github-copilot-git-2.53.0-4\\cmd\\git.exe",
+    "process_path_entry_count": 33,
+    "registry_install_path": "C:\\Program Files\\Git",
+    "resolution_source": "embedded",
+    "version": "git version 2.53.0.windows.4",
+    "version_error": null,
+    "where_exe_results": [
+      "C:\\Users\\rober\\AppData\\Local\\github-copilot-git-2.53.0-4\\cmd\\git.exe",
+      "C:\\Users\\rober\\AppData\\Local\\github-copilot-git-2.53.0-4\\mingw64\\bin\\git.exe",
+      "C:\\Program Files\\Git\\cmd\\git.exe",
+      "C:\\Program Files\\Git\\bin\\git.exe",
+      "C:\\Program Files\\Git\\mingw64\\bin\\git.exe"
+    ]
+  },
+  "ok": true,
+  "repo_storage": {
+    "repos_root": "C:\\Users\\rober\\.copilot\\repos",
+    "repos_root_exists": true,
+    "repos_root_is_dir": true,
+    "repos_root_path_length": 29,
+    "repos_root_writable": true,
+    "repos_root_writable_error": null,
+    "windows_long_path_risk": false
+  },
+  "timestamp": "2026-09-12T22:18:35.738634300+00:00",
+  "websocket_port": 54456
+}
